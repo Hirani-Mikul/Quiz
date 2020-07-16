@@ -1,16 +1,17 @@
 header {
   text-align: center;
-  /* border: 0.1rem solid red; */
 }
 nav {
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-around;
-  /* border: 0.1rem solid green; */
 }
 header nav > * {
+  padding-top: 0.6rem;
   width: 33.3%;
-  border: 0.2rem solid purple;
-  border-radius: 30%;
+  border-left: 0.2rem solid purple;
+  border-right: 0.2rem solid purple;
+  border-radius: 20%;
 }
 .choice-container {
   display: flex;
@@ -55,4 +56,41 @@ footer {
 #fun-text {
   margin-top: 1rem;
   font-size: 1.8rem;
+}
+
+.wrong > * {
+  color: white;
+}
+.correct > * {
+  color: white;
+}
+.show-correct > * {
+  color: white;
+}
+
+.wrong {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.correct {
+  background-color: rgba(0, 255, 0, 0.6);
+}
+.show-correct {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+#hud-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#progressBar {
+  width: 16rem;
+  height: 2rem;
+  margin: 1rem 0 0.5rem 0.5rem;
+  border: 0.2rem solid rgb(80, 15, 231);
+}
+#progressBarFull {
+  background-color: rgba(80, 15, 231, 0.7);
+  height: 1.8rem;
+  width: 0%;
 }

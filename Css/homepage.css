@@ -13,8 +13,6 @@ h1 {
   color: blue;
   margin-bottom: 1rem;
 }
-h2 {
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -58,4 +56,17 @@ h2 {
   box-shadow: 0 0.4rem 1.4rem 0 rbga(0, 255, 100, 0.6);
   transform: translateY(-0.2rem) translateX(0.1rem);
   transition: transform 150ms;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 14px 0 rgba(0, 255, 0, 0.5);
+}
+input::placeholder {
+  color: #aaa;
 }

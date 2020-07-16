@@ -16,10 +16,9 @@
       <header>
         <nav id="hud">
           <div id="hud-items">
-            <p>Question: 1/10</p>
-            <div>
-              ProgressBar
-              <div>FullProgressBar</div>
+            <p id="progressText">Question: 1/10</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
             </div>
           </div>
           <div>
@@ -28,7 +27,7 @@
           </div>
           <div>
             <p>Score</p>
-            <h1>0</h1>
+            <h1 id="score">0</h1>
           </div>
         </nav>
       </header>
@@ -36,28 +35,35 @@
         <h1 id="question-text">1.What is your name?</h1>
         <div class="choice-container">
           <p class="choice-letter">A</p>
-          <p class="choice-text">Choice A</p>
+          <p class="choice-text" data-number="1">Choice A</p>
         </div>
         <div class="choice-container">
           <p class="choice-letter">B</p>
-          <p class="choice-text">Choice B</p>
+          <p class="choice-text" data-number="2">Choice B</p>
         </div>
         <div class="choice-container">
           <p class="choice-letter">C</p>
-          <p class="choice-text">Choice C</p>
+          <p class="choice-text" data-number="3">Choice C</p>
         </div>
         <div class="choice-container">
           <p class="choice-letter">D</p>
-          <p class="choice-text">Choice D</p>
+          <p class="choice-text" data-number="4">Choice D</p>
         </div>
       </main>
       <footer>
         <nav>
-          <button class="btn2">Previous</button>
-          <button class="btn2">Next</button>
+          <button class="btn2" onclick="goToPreviousQuestion()">
+            Previous
+          </button>
+          <button onclick="leave()" class="btn2">Leave</button>
+          <button class="btn2" id="skipBtn" onclick="handleNextAndSkip()">
+            Skip
+          </button>
         </nav>
         <p id="fun-text">Hello how are you? What is your name?</p>
       </footer>
     </div>
+    <script src="../Scripts/question.js"></script>
+    <script src="../Scripts/game.js"></script>
   </body>
 </html>
