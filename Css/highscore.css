@@ -1,0 +1,26 @@
+#highscoreDiv > * {
+  margin: 1rem;
+}
+ul {
+  border: 0.5rem ridge green;
+  width: 80%;
+  font-size: 2rem;
+  padding: 1rem;
+}
+li {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2rem solid green;
+  list-style: none;
+}
+li span {
+  color: rgb(201, 114, 15);
+  word-break: break-all;
+}
+li:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(27, 167, 202, 0.5);
+  cursor: pointer;
+  transform: translateX(0.2rem) translateY(0.2rem) scale(1.05);
+}

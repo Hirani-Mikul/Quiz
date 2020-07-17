@@ -50,6 +50,11 @@ header nav > * {
   cursor: pointer;
   box-shadow: 0 0.3rem 1.3rem 0 rgba(14, 112, 129, 0.5);
 }
+.btn2[disabled]:hover {
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
 footer {
   text-align: center;
 }

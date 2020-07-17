@@ -6,7 +6,7 @@ const progressText = document.getElementById("progressText");
 const progressBar = document.getElementById("progressBarFull");
 
 const skipBtn = document.getElementById("skipBtn");
-
+const previousBtn = document.getElementById("previous-btn");
 let availableQuestion = [];
 let QuestionCounter = 0;
 let currentQuestion = {};
@@ -86,6 +86,8 @@ function getQuestion() {
 }
 
 function updateQuestion() {
+  previousBtn.disabled = QuestionCounter == 1;
+
   Question_Text.innerText = QuestionCounter + ". " + currentQuestion.Que;
 
   choices.forEach((choice, i) => {

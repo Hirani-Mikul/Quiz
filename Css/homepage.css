@@ -70,3 +70,8 @@ input {
 input::placeholder {
   color: #aaa;
 }
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
